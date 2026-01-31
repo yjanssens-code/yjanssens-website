@@ -6,7 +6,7 @@ metadata:
 spec:
   secretName: yjanssens-tls
   issuerRef:
-    name: letsencrypt-yjanssens
+    name: letsencrypt-production
     kind: ClusterIssuer
   dnsNames:
     - yjanssens.be

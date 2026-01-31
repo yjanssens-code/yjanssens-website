@@ -1,0 +1,27 @@
+apiVersion: build.openshift.io/v1
+kind: BuildConfig
+metadata:
+  name: yjanssens-website
+  namespace: yjanssens
+  labels:
+    app: yjanssens-website
+spec:
+  output:
+    to:
+      kind: ImageStreamTag
+      name: yjanssens-website:latest
+  source:
+    type: Git
+    git:
+      uri: https://github.com/yjanssens-code/yjanssens-website.git
+      ref: main
+  strategy:
+    type: Docker
+    dockerStrategy:
+      dockerfilePath: Dockerfile
+  triggers:
+    - type: ConfigChange
+    - type: GitHub
+      github:
+        secretReference:
+          name: github-webhook-secret
