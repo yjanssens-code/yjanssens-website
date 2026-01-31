@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="nl"><head>
+  <meta charset="utf-8">
+  <title>Join the WebRing (1995)</title>
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/site.js"></script>
+</head><body>
+  <div class="container">
+    <div class="header"><font size="6"><b>Join the WebRing</b></font><br><small>Invullen • Afdrukken • Faxen (grapje) • 1995</small></div>
+    <div class="nav">
+      <a href="index.html"><img src="assets/button-home.gif" border="0"></a>
+      <a href="banners.html"><img src="assets/button-links.gif" border="0" alt="Banners"></a>
+      <a href="join-webring.html"><img src="assets/button-contact.gif" border="0" alt="Join"></a>
+    </div>
+    <div class="content">
+      <div class="box">
+        <font size="4"><b>WebRing Application Form</b></font><div class="hr95"></div>
+        <form>
+          Site naam:<br><input type="text" size="50"><br><br>
+          URL:<br><input type="text" size="50" value="http://"><br><br>
+          Webmaster naam:<br><input type="text" size="50"><br><br>
+          Email:<br><input type="text" size="50"><br><br>
+          Korte beschrijving (1–2 zinnen):<br><textarea cols="52" rows="4"></textarea><br><br>
+          Je belooft:<br>
+          <input type="checkbox"> Geen spam<br>
+          <input type="checkbox"> Minstens één banner (468×60) plaatsen<br>
+          <input type="checkbox"> WebRing navigatie (Prev/Next/Random) plaatsen<br><br>
+          <input type="submit" value="APPLY">
+          <input type="reset" value="RESET">
+        </form>
+        <br><small>(Formulier is “fake”. In 1995 zou dit een CGI script zijn dat net niet werkt.)</small>
+      </div>
+      <div class="box">
+        <b>Installatie (copy/paste)</b><br><div class="hr95"></div>
+        <small>Plak dit onderaan je pagina:</small><br><br>
+        <font face="Courier New" size="2">
+          &lt;hr&gt;<br>
+          &lt;b&gt;YVES' WEBRING&lt;/b&gt;:
+          &lt;a href="index.html"&gt;[Prev]&lt;/a&gt;
+          &lt;a href="index.html"&gt;[Next]&lt;/a&gt;
+          &lt;a href="banners.html"&gt;[Banners]&lt;/a&gt;
+        </font>
+      </div>
+    </div>
+    <div class="footer"><small>© 1995–1996 Yves</small><hr>
+<b>Banner Exchange</b>:
+<a href="banners.html">[Banners]</a>
+<a href="join-webring.html">[Join]</a>
+&nbsp;|&nbsp;
+<b>WebRing</b>:
+<a href="index.html">[Prev]</a>
+<a href="index.html">[Next]</a>
+<a href="#" onclick="
+  var pages=['index.html','about.html','homelab.html','gallery.html','hobbies.html','guestbook.html','links.html','contact.html','stats.html','banners.html','join-webring.html'];
+  location.href = pages[Math.floor(Math.random()*pages.length)];
+  return false;">[Random]</a>
+&nbsp;|&nbsp;
+<a href="stats.html">stats.cgi</a></div>
+  </div>
+</body></html>

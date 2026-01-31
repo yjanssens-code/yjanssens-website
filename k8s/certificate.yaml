@@ -1,0 +1,16 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: yjanssens-tls
+  namespace: yjanssens
+spec:
+  secretName: yjanssens-tls
+  issuerRef:
+    name: letsencrypt-yjanssens
+    kind: ClusterIssuer
+  dnsNames:
+    - yjanssens.be
+    - www.yjanssens.be
+  privateKey:
+    algorithm: RSA
+    size: 2048

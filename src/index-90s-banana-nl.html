@@ -1,0 +1,352 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>!!! WELKOM OP YVES' SUPER BANANA REALM - PENTIUM II POWER !!!</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  
+  <style type="text/css">
+    body {
+      background-color: #000080;
+      background-image: url('data:image/gif;base64,R0lGODlhFAAUAKEAAAAAADMzM2ZmZgAAACH5BAEAAAIALAAAAAAUABQAAAIklI+py+0PYwO0WgBz3rz7rxEASJamgZGkmQCsC8fyTNdGpwIAOw==');
+      background-repeat: repeat;
+      cursor: crosshair;
+      color: #FFFF00;
+      font-family: "Comic Sans MS", "Arial", sans-serif;
+    }
+    a { color: #FF00FF; text-decoration: none; }
+    a:hover { color: #00FFFF; text-decoration: blink; background: #FF0000; }
+    
+    .panel {
+      background: rgba(0,0,0,0.85);
+      border: 6px ridge #00FFFF;
+      padding: 15px;
+      margin: 10px;
+    }
+
+    .rainbow {
+      font-weight: bold;
+      animation: rainbow-anim 1s linear infinite;
+    }
+    @keyframes rainbow-anim { 
+      0% { color: red; } 20% { color: yellow; } 40% { color: lime; } 60% { color: aqua; } 80% { color: fuchsia; } 100% { color: red; }
+    }
+
+    .blink {
+      animation: blink-anim 0.5s linear infinite;
+    }
+    @keyframes blink-anim {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+
+    /* MIRC VENSTER */
+    .mirc-window {
+      background-color: #C0C0C0;
+      border: 3px outset #FFF;
+      padding: 2px;
+    }
+    .mirc-font {
+      font-family: "Fixedsys", "Courier New", monospace;
+      font-size: 12px;
+      background-color: #000;
+      color: #FFF;
+      padding: 10px;
+      height: 450px;
+      overflow-y: scroll;
+      text-align: left;
+      border: 2px inset #808080;
+    }
+    .mirc-input {
+      background-color: #000; color: #FFF; border: 2px inset #808080; width: 100%; font-family: "Fixedsys", monospace; margin-top: 2px;
+    }
+    
+    /* MIRC KLEUREN */
+    .m-n { color: #FF0000; font-weight: bold;} /* Nick */
+    .m-u { color: #0000FF; font-weight: bold;} /* User */
+    .m-s { color: #A0A0A0; font-style: italic; } /* System */
+    .m-a { color: #FF00FF; } /* Action */
+  </style>
+
+<script type="text/javascript">
+var chats = [
+  "[14:02] <span class='m-s'>*** Topic is 'Pentium II 450MHz > Je leven | Geen lutsers'</span><br>[14:03] &lt;<span class='m-n'>@Yves</span>&gt; Iemand Serial voor WinAmp Pro? ROFL<br>[14:04] &lt;<span class='m-u'>Banaan_Piraat</span>&gt; Yves: check je DCC, kstuur crack.exe!<br>[14:05] &lt;<span class='m-n'>@Yves</span>&gt; THX! MP3's knallen nu echt hard op mijn AWE64!",
+  
+  "[19:42] <span class='m-s'>*** Yves has joined #banana</span><br>[19:42] <span class='m-s'>*** Topic is: 'Wie wil er Unreal Tournament spelen??'</span><br>[19:43] &lt;<span class='m-n'>@Yves</span>&gt; Iemand A/S/L?<br>[19:43] &lt;<span class='m-u'>SurferBoy99</span>&gt; 16/m/Belgie<br>[19:44] <span class='m-a'>* Yves slaps SurferBoy99 around a bit with a large trout</span><br>[19:45] &lt;<span class='m-n'>@Yves</span>&gt; lol<br>[19:46] &lt;<span class='m-u'>Guest23</span>&gt; hoe maak je zo'n coole site??<br>[19:46] &lt;<span class='m-n'>@Yves</span>&gt; notepad.exe man",
+  
+  "[20:10] <span class='m-s'>*** Connecting to irc.belnet.be...</span><br><span class='m-s'>*** Welkom op de Belgische IRC server</span><br>[20:10] <span class='m-s'>*** Yves has joined #Nijlen</span><br>[20:11] &lt;<span class='m-n'>@Yves</span>&gt; Iemand zin in een potje Quake II?<br>[20:11] &lt;<span class='m-u'>Dark_Avenger</span>&gt; Ja man, mijn Pentium II 450 knalt echt!<br>[20:12] &lt;<span class='m-u'>Internet_Opa</span>&gt; Hoe moet ik een GIF downloaden?<br>[20:12] &lt;<span class='m-n'>@Yves</span>&gt; Rechtermuisknop opa... LOL<br>[20:13] &lt;<span class='m-u'>L33t_Kid</span>&gt; Wie heeft de nieuwe crack voor WinZip?<br>[20:14] <span class='m-s'>*** L33t_Kid was kicked by Yves (Geen Warez hier!)</span><br>[20:15] &lt;<span class='m-u'>Anoniem_98</span>&gt; Is Windows 98 echt beter dan 95?<br>[20:16] &lt;<span class='m-n'>@Yves</span>&gt; Ja, USB ondersteuning is de toekomst!<br>[20:17] <span class='m-s'>*** Netsplit: irc.belnet.be &lt;-&gt; irc.skynet.be</span><br>[20:18] &lt;<span class='m-n'>@Yves</span>&gt; zucht, kutverbinding... LOL",
+  
+  "[15:10] &lt;<span class='m-u'>Cyber_Grietje</span>&gt; asl?<br>[15:11] &lt;<span class='m-n'>@Yves</span>&gt; 18/m/Nijlen op een Pentium II overclocked naar 500MHz ;)<br>[15:12] &lt;<span class='m-u'>Cyber_Grietje</span>&gt; Oehh wat een snelheid! ROFLMAO<br>[15:13] &lt;<span class='m-n'>@Yves</span>&gt; Voodoo 2 SLI setup, 60fps Quake III! Come over? LOL",
+  
+  "[10:20] <span class='m-s'>*** NetSplit: irc.belnet.be &lt;---&gt; irc.skynet.be</span><br>[10:21] &lt;<span class='m-n'>@Yves</span>&gt; Kak Planet Internet modems ook altijd. LOL!<br>[10:22] <span class='m-s'>*** L33t_Hacker has quit (Ping timeout)</span><br>[10:23] &lt;<span class='m-u'>Modem_User</span>&gt; Mijn moeder moet bellen, bye!<br>[10:24] <span class='m-s'>*** Modem_User has quit (Connection reset by peer)</span>",
+  
+  "[19:30] <span class='m-a'>* Yves slaps Modem_User with a large frozen banana</span><br>[19:31] &lt;<span class='m-u'>Modem_User</span>&gt; AU! Doe normaal man, kzit op 14.4k! De lag is echt!<br>[19:32] &lt;<span class='m-n'>@Yves</span>&gt; Upgrade naar 56k n00b! ROFL",
+  
+  "[22:00] &lt;<span class='m-u'>Quake_King</span>&gt; Yves, durf je 1v1 DM6?<br>[22:01] &lt;<span class='m-n'>@Yves</span>&gt; Ik heb een Voodoo 2 SLI setup, je gaat huilen als ik je 60fps frag! ROFL<br>[22:02] &lt;<span class='m-u'>Quake_King</span>&gt; Ik heb Voodoo Rush... 20fps max :(<br>[22:03] &lt;<span class='m-n'>@Yves</span>&gt; ROFLMAO Voodoo Rush = epic fail!",
+  
+  "[13:12] &lt;<span class='m-u'>Newbie99</span>&gt; Hoe download ik meer RAM?<br>[13:13] &lt;<span class='m-n'>@Yves</span>&gt; Alt+F4 indrukken voor de geheime download link! LOL<br>[13:14] <span class='m-s'>*** Newbie99 has quit (Client closed)</span><br>[13:15] &lt;<span class='m-n'>@Yves</span>&gt; ROFLMAO werkt elke keer!",
+  
+  "[16:45] &lt;<span class='m-u'>ICQ_Spammer</span>&gt; Add me: 12345678! Ik heb gratis Nokia 3310 ringtones!<br>[16:46] <span class='m-s'>*** Yves sets mode: +b *!*ICQ*!*@*</span><br>[16:46] <span class='m-s'>*** ICQ_Spammer was kicked by Yves (STFU met je spam)</span><br>[16:47] &lt;<span class='m-n'>@Yves</span>&gt; Niemand wil je Crazy Frog ringtone!",
+  
+  "[11:11] &lt;<span class='m-u'>Script_Kiddy</span>&gt; Ik ga je IP hacken met SubSeven!<br>[11:12] &lt;<span class='m-n'>@Yves</span>&gt; Probeer maar, mijn firewall is een banaan. ROFL!!<br>[11:13] &lt;<span class='m-u'>Script_Kiddy</span>&gt; Ik heb Back Orifice gedownload!<br>[11:14] &lt;<span class='m-n'>@Yves</span>&gt; Geniet van je trojans, n00b! LOL",
+  
+  "[00:05] &lt;<span class='m-u'>Nacht_Raaf</span>&gt; Is Windows 98 SE al uit bij Free Record Shop?<br>[00:06] &lt;<span class='m-n'>@Yves</span>&gt; Ja man, USB ondersteuning is de shit! Geen IRQ conflicten meer!<br>[00:07] &lt;<span class='m-u'>Nacht_Raaf</span>&gt; Mijn Sound Blaster 16 werkt nu eindelijk!<br>[00:08] &lt;<span class='m-n'>@Yves</span>&gt; AWE64 Gold masterrace! ROFL",
+  
+  "[14:40] &lt;<span class='m-u'>Napster_User</span>&gt; Wie heeft Metallica - Enter Sandman.mp3 (320kbps)?<br>[14:41] &lt;<span class='m-n'>@Yves</span>&gt; Ik! 3.5MB download, 10 minuten op 56k! LOL<br>[14:42] &lt;<span class='m-u'>Napster_User</span>&gt; Lars Ulrich komt je halen!<br>[14:43] &lt;<span class='m-n'>@Yves</span>&gt; Napster 4 life! ROFLMAO",
+  
+  "[18:20] &lt;<span class='m-u'>Dancing_B</span>&gt; Heb je die nieuwe dancing banana op je site gezien?<br>[18:21] &lt;<span class='m-n'>@Yves</span>&gt; Ja, hij danst sneller dankzij de MMX technologie! ROFLMAO<br>[18:22] &lt;<span class='m-u'>Dancing_B</span>&gt; Hoeveel FPS draait de GIF?<br>[18:23] &lt;<span class='m-n'>@Yves</span>&gt; 12 FPS, cinematic experience! LOL",
+  
+  "[20:15] &lt;<span class='m-u'>Mama_Belt</span>&gt; YVES! Ik moet bellen! GA VAN HET INTERNET!<br>[20:16] &lt;<span class='m-n'>@Yves</span>&gt; NOG 5 MINUTEN MAM! Ik download een banaan van 2MB!<br>[20:17] &lt;<span class='m-u'>Mama_Belt</span>&gt; TELEFOON. NU.<br>[20:18] <span class='m-s'>*** Yves has quit (mom picked up phone)</span>",
+  
+  "[09:30] <span class='m-s'>*** Mode change: +o Yves by ChanServ</span><br>[09:31] &lt;<span class='m-n'>@Yves</span>&gt; I love the smell of overclocked silicon in the morning.<br>[09:32] &lt;<span class='m-u'>Intel_Fan</span>&gt; Pentium III komt eraan!<br>[09:33] &lt;<span class='m-n'>@Yves</span>&gt; Pentium II 4 LIFE! Never upgrade! ROFL",
+  
+  "[12:00] &lt;<span class='m-u'>Altavista_Searcher</span>&gt; Hoe vind ik por... ik bedoel banaan recepten?<br>[12:01] &lt;<span class='m-n'>@Yves</span>&gt; Zoek op Yahoo of Lycos, n00b! LOL<br>[12:02] &lt;<span class='m-u'>Altavista_Searcher</span>&gt; Wat is Google?<br>[12:03] &lt;<span class='m-n'>@Yves</span>&gt; Een of andere nieuwe site, geen kans tegen AltaVista!",
+  
+  "[23:59] &lt;<span class='m-u'>Y2K_Paniek</span>&gt; Gaan onze Pentium II's ontploffen op 1 januari 2000?!<br>[00:00] &lt;<span class='m-n'>@Yves</span>&gt; Zolang je bananen eet niet. ROFL!!!<br>[00:01] &lt;<span class='m-u'>Y2K_Paniek</span>&gt; Ik heb 50 diskettes backup gemaakt!<br>[00:02] &lt;<span class='m-n'>@Yves</span>&gt; Smart! Ik heb een ZIP drive! 100MB per disk! LOL",
+  
+  "[17:20] <span class='m-s'>*** Yves has joined #warez</span><br>[17:21] &lt;<span class='m-n'>@Yves</span>&gt; Heeft iemand MS Office 97 op ZIP disks?<br>[17:22] &lt;<span class='m-u'>Disk_Dealer</span>&gt; Ja 42 floppy diskjes, kom maar halen! LOL<br>[17:23] &lt;<span class='m-n'>@Yves</span>&gt; 42?! Ik heb de hele middag tijd om te swappen! ROFL",
+  
+  "[21:10] &lt;<span class='m-u'>GeoCities_Fan</span>&gt; Hoe voeg ik een MIDI achtergrond muziekje toe?<br>[21:11] &lt;<span class='m-n'>@Yves</span>&gt; &lt;bgsound src='banaan.mid' loop='infinite'&gt; ROFL<br>[21:12] &lt;<span class='m-u'>GeoCities_Fan</span>&gt; OMG dat is zo professioneel!<br>[21:13] &lt;<span class='m-n'>@Yves</span>&gt; Welcome to 1998! LOL",
+  
+  "[13:45] &lt;<span class='m-u'>CD_Burner_Pro</span>&gt; Ik heb net mijn eerste CD gebrand! 2x snelheid!<br>[13:46] &lt;<span class='m-n'>@Yves</span>&gt; Wauw! Ik zit nog op 1x, kost me 80 minuten per CD! LOL<br>[13:47] &lt;<span class='m-u'>CD_Burner_Pro</span>&gt; Buffer underrun errors zijn mijn tweede voornaam...<br>[13:48] &lt;<span class='m-n'>@Yves</span>&gt; 5 coasters per 10 CD's! ROFLMAO",
+  
+  "[16:00] <span class='m-s'>*** Yves sets topic to 'AltaVista > Google | FIGHT ME'</span><br>[16:01] &lt;<span class='m-u'>Future_Man</span>&gt; Wat is Google?<br>[16:02] &lt;<span class='m-n'>@Yves</span>&gt; Een of andere nieuwe zoeksite... geen kans tegen AltaVista! ROFL<br>[16:03] &lt;<span class='m-u'>Future_Man</span>&gt; Ze hebben een leuke homepage...<br>[16:04] &lt;<span class='m-n'>@Yves</span>&gt; Te simpel! Waar zijn de Flash intros?! LOL",
+  
+  "[10:30] &lt;<span class='m-u'>RealPlayer_User</span>&gt; Buffering... buffering... buffering...<br>[10:31] &lt;<span class='m-n'>@Yves</span>&gt; LOL classic 56k probleem!<br>[10:32] &lt;<span class='m-u'>RealPlayer_User</span>&gt; Ik kijk al 10 minuten naar 3 seconden video! ROFL<br>[10:33] &lt;<span class='m-n'>@Yves</span>&gt; Moet je in 160x120 resolutie kijken! Butter smooth! LOL",
+  
+  "[14:15] &lt;<span class='m-u'>Flash_Gordon</span>&gt; Heb je Flash 4 al geïnstalleerd?<br>[14:16] &lt;<span class='m-n'>@Yves</span>&gt; Ja man! Skip Intro buttons zijn nu obsolete! LOL<br>[14:17] &lt;<span class='m-u'>Flash_Gordon</span>&gt; Mijn site is nu 100% Flash, 45MB download! ROFLMAO<br>[14:18] &lt;<span class='m-n'>@Yves</span>&gt; 2 uur downloaden op 56k! EPIC!",
+  
+  "[19:00] &lt;<span class='m-u'>AOL_Refugee</span>&gt; Ik ben net van AOL naar echte internet gegaan!<br>[19:01] &lt;<span class='m-n'>@Yves</span>&gt; Welkom in de echte wereld! Geen 'You've got mail' meer! LOL<br>[19:02] &lt;<span class='m-u'>AOL_Refugee</span>&gt; Ik mis de AOL CD-collectie al...<br>[19:03] &lt;<span class='m-n'>@Yves</span>&gt; Gebruik ze als onderzetters! ROFLMAO",
+  
+  "[11:50] &lt;<span class='m-u'>Cascade_Victim</span>&gt; HELP! Ik heb het Cascade virus!<br>[11:51] &lt;<span class='m-n'>@Yves</span>&gt; Druk op alle toetsen tegelijk! ROFL nee grapje, gebruik McAfee<br>[11:52] <span class='m-s'>*** Cascade_Victim has quit (Connection reset by peer)</span><br>[11:53] &lt;<span class='m-n'>@Yves</span>&gt; RIP zijn HDD... LOL",
+  
+  "[15:30] &lt;<span class='m-u'>Screensaver_Addict</span>&gt; Flying Toasters of 3D Maze?<br>[15:31] &lt;<span class='m-n'>@Yves</span>&gt; 3D Pipes man! Echt next-gen graphics! LOL<br>[15:32] &lt;<span class='m-u'>Screensaver_Addict</span>&gt; Mijn CPU gaat naar 100% maar het is het waard!<br>[15:33] &lt;<span class='m-n'>@Yves</span>&gt; Pentium II handles it easy! ROFLMAO",
+  
+  "[22:30] &lt;<span class='m-u'>LAN_Party_King</span>&gt; Morgen LAN party! Wie brengt de 10-base-T hub?<br>[22:31] &lt;<span class='m-n'>@Yves</span>&gt; Ik! En coax backup kabel voor IPX/SPX! ROFL<br>[22:32] &lt;<span class='m-u'>LAN_Party_King</span>&gt; Perfect! NetBEUI of IPX?<br>[22:33] &lt;<span class='m-n'>@Yves</span>&gt; IPX masterrace! 10Mbps gedeeld door 8 man! LOL",
+  
+  "[12:20] &lt;<span class='m-u'>Zip_Disk_Fan</span>&gt; Ik heb net 100MB op 1 disk opgeslagen!<br>[12:21] &lt;<span class='m-n'>@Yves</span>&gt; Wauw! Goodbye floppy disks! LOL<br>[12:22] &lt;<span class='m-u'>Zip_Disk_Fan</span>&gt; Tenzij je de Click of Death krijgt... ROFLMAO<br>[12:23] &lt;<span class='m-n'>@Yves</span>&gt; *click click click* NOOOO! My Quake saves!",
+  
+  "[18:00] &lt;<span class='m-u'>Turbo_Button_Lover</span>&gt; Turbo knop AAN of UIT tijdens gamen?<br>[18:01] &lt;<span class='m-n'>@Yves</span>&gt; ALTIJD AAN! 33MHz is voor losers! LOL<br>[18:02] &lt;<span class='m-u'>Turbo_Button_Lover</span>&gt; Maar oude DOS games crashen dan!<br>[18:03] &lt;<span class='m-n'>@Yves</span>&gt; Dan gebruik je MoSlo.exe! Of DOSBox! ROFL",
+  
+  "[20:45] &lt;<span class='m-u'>BonziBuddy</span>&gt; HELLO! I AM YOUR PURPLE GORILLA FRIEND!<br>[20:46] <span class='m-s'>*** BonziBuddy was kicked by Yves (MALWARE! GTFO!)</span><br>[20:47] &lt;<span class='m-n'>@Yves</span>&gt; Niemand wil je, Bonzi! LOL<br>[20:48] &lt;<span class='m-u'>ClippyFan</span>&gt; Clippy is beter!<br>[20:49] &lt;<span class='m-n'>@Yves</span>&gt; ROFLMAO beide cancer!",
+  
+  "[08:00] &lt;<span class='m-u'>Encarta_User</span>&gt; Ik schrijf mijn werkstuk met Encarta 98!<br>[08:01] &lt;<span class='m-n'>@Yves</span>&gt; Die CD-ROM set is LEGENDARY! ROFL<br>[08:02] &lt;<span class='m-u'>Encarta_User</span>&gt; 650MB aan kennis!<br>[08:03] &lt;<span class='m-n'>@Yves</span>&gt; Wikipedia? Wat is dat? LOL",
+  
+  "[16:30] &lt;<span class='m-u'>WinAmp_DJ</span>&gt; WinAmp 2.666 is uit!<br>[16:31] &lt;<span class='m-n'>@Yves</span>&gt; It really whips the llama's ass! ROFLMAO<br>[16:32] &lt;<span class='m-u'>WinAmp_DJ</span>&gt; Welke skin gebruik jij?<br>[16:33] &lt;<span class='m-n'>@Yves</span>&gt; Classic, alles anders is voor n00bs! LOL",
+  
+  "[09:15] &lt;<span class='m-u'>Paint_Shop_Pro</span>&gt; Photoshop of Paint Shop Pro?<br>[09:16] &lt;<span class='m-n'>@Yves</span>&gt; MS Paint masterrace! ROFL<br>[09:17] &lt;<span class='m-u'>Paint_Shop_Pro</span>&gt; Maar layers?!<br>[09:18] &lt;<span class='m-n'>@Yves</span>&gt; Ctrl+C Ctrl+V is mijn layer system! LOL"
+];
+
+function loadChat() {
+  document.getElementById('mirc-box').innerHTML = chats[Math.floor(Math.random() * chats.length)];
+}
+
+window.onload = function() {
+  loadChat();
+  setInterval(function() {
+    var title = document.title;
+    document.title = title.substring(1) + title.substring(0,1);
+  }, 200);
+};
+</script>
+</head>
+
+<body>
+
+<center>
+  <h1><font size="7" color="#FFFF00">🌟 WELKOM OP DE <span class="rainbow">ULTIMATE</span> BANANA REALM 🌟</font></h1>
+  
+  <marquee scrollamount="15" bgcolor="#FF00FF">
+    <font color="#FFFF00"><b>+++ PENTIUM II 450MHz OVERDRIVE GEACTIVEERD +++ LOL +++ ROFL +++ LMAO +++ BANANA POWER +++</b></font>
+  </marquee>
+
+  <img src="https://usagif.com/wp-content/uploads/gifs/banana-14.gif" width="100">
+  <img src="https://usagif.com/wp-content/uploads/gifs/banana-83.gif" width="100">
+  <img src="https://usagif.com/wp-content/uploads/gifs/banana-99.gif" width="100">
+  <img src="https://usagif.com/wp-content/uploads/gifs/banana-14.gif" width="100">
+  
+  <br>
+  <font size="6" class="blink" color="#FF0000"><b>⚠️ WAARSCHUWING: Extreme Nostalgie kan leiden tot melancholie wanneer je beseft dat nooit meer terugkomt ⚠️</b></font>
+</center>
+
+<table border="0" width="100%" cellspacing="10">
+  <tr>
+    <td width="300" valign="top">
+      <div class="panel" style="border-color: yellow;">
+        <center>
+          <font color="#FFFFFF" size="4"><b>🔥 NAVIGATIE 🔥</b></font><br>
+          <hr color="#00FFFF">
+          <a href="#">🏠 HOME (IS WAAR DE BANAAN IS)</a><br>
+          <a href="#specs">💻 MIJN MONSTER PC</a><br>
+          <a href="#gastenboek">📝 GASTENBOEK (TEKENEN!!)</a><br>
+          <hr color="#00FFFF">
+          
+          <font color="#FFFF00" size="2"><b>mIRC v5.51 [#Nijlen]</b></font>
+          <div class="mirc-window">
+            <div id="mirc-box" class="mirc-font"></div>
+            <input type="text" class="mirc-input" value="/join #bananen_paradijs">
+          </div>
+          <br>
+          <font size="1" class="blink">mIRC 4.12</font>
+          
+          <hr color="#00FFFF">
+          <marquee direction="up" height="80" scrollamount="2">
+            <font color="#FF00FF">💾 DOWNLOAD</font><br>
+            <font color="#00FFFF">🎮 GAMES</font><br>
+            <font color="#FFFF00">🎵 MP3Z</font><br>
+            <font color="#00FF00">🔓 CRACKZ</font>
+          </marquee>
+        </center>
+      </div>
+    </td>
+
+    <td valign="top">
+      <div class="panel">
+        <center>
+          <h2><span class="rainbow">🚀 PENTIUM II 450MHz SPECS 🚀</span></h2>
+          <font size="2" class="blink" color="#FF0000">*** UPDATED: VANDAAG ***</font>
+        </center>
+        
+        <a name="specs"></a>
+        <table width="100%" border="3" bordercolor="#00FF00" bgcolor="#000044" cellpadding="10">
+          <tr>
+            <td>
+              <font color="white">
+                <center><b><span class="rainbow">*** MIJN WORKSTATION ***</span></b></center>
+                <ul>
+                  <li><b>CPU:</b> Intel Pentium II 450 MHz (Slot 1) - Mic Drop! 🔥</li>
+                  <li><b>RAM:</b> 128 MB PC100 SDRAM (Meer dan iemand ooit zal nodig hebben!) 💪</li>
+                  <li><b>GPU:</b> 3DFX Voodoo 2 12MB SLI (God mode) 🎮</li>
+                  <li><b>GELUID:</b> Sound Blaster AWE64 Gold (ROFL die bassen!) 🔊</li>
+                  <li><b>MODEM:</b> US Robotics 56K V.90 (Lightspeed Internet!) 📞</li>
+                  <li><b>HDD:</b> Quantum Fireball 6.4GB (Genoeg voor heel het internet op te slaan!) 💾</li>
+                  <li><b>CD-ROM:</b> 32x SCSI (kan CD's afspelen tijdens gamen!) 💿</li>
+                  <li><b>OS:</b> Windows 98 Second Edition (SO STABLE! LOL) 🪟</li>
+                </ul>
+              </font>
+            </td>
+          </tr>
+        </table>
+
+        <br>
+        <center>
+          <table border="5" bordercolor="#FF00FF" bgcolor="black" width="100%">
+            <tr>
+              <td align="center">
+                <marquee direction="up" height="150" scrollamount="3">
+                  <font size="6" color="#FF00FF"><b>ROFL</b></font><br>
+                  <font size="6" color="#00FFFF"><b>LOL</b></font><br>
+                  <font size="6" color="#FFFF00"><b>LMAO</b></font><br>
+                  <font size="6" color="#00FF00"><b>L33T</b></font><br>
+                  <font size="6" color="#FF0000"><b>ROFLMAO</b></font><br>
+                  <font size="6" color="#FFA500"><b>LOLZ</b></font>
+                </marquee>
+              </td>
+              <td align="center">
+                <img src="https://usagif.com/wp-content/uploads/gifs/banana-99.gif" width="120"><br>
+                <font color="lime" size="4"><b class="blink">BANANA!</b></font>
+              </td>
+            </tr>
+          </table>
+        </center>
+
+        <br>
+        <a name="gastenboek"></a>
+        <hr size="5" color="#FFFF00">
+        <center>
+          <div style="background: #FF0000; padding: 20px; border: 5px dashed white;">
+            <font size="6" color="white"><b>✏️ TEKEN MIJN GASTENBOEK! ✏️</b></font><br>
+            <marquee scrollamount="5"><font color="yellow">*** GRATIS NOKIA 3210 VOOR DE 1000STE BEZOEKER ***</font></marquee>
+            <p>Laat een berichtje achter of ik hack je modem met SubSeven! ROFLMAO!</p>
+            <form>
+              Naam: <input type="text"><br>
+              Email: <input type="text" value="jouwemam@hotmail.com"><br>
+              Website: <input type="text" value="http://geocities.com/"><br>
+              Bericht: <textarea rows="3"></textarea><br>
+              <input type="button" value="VERZENDEN NAAR CYBERSPACE" onclick="alert('Bedankt! Je bent nu officieel een banaan! LOL')">
+              <input type="button" value="RESET (voor losers)" onclick="alert('ROFL nice try!')">
+            </form>
+            <img src="https://media.giphy.com/media/cfuL5gqFDreBbMjNu6/giphy.gif" width="50">
+            <img src="https://usagif.com/wp-content/uploads/gifs/banana-14.gif" width="50">
+          </div>
+        </center>
+        
+        <br>
+        <center>
+          <font size="5" color="lime"><b class="blink">🎵 NOW PLAYING: Darude - Sandstorm (128kbps MP3) 🎵</b></font><br>
+          <marquee scrollamount="20" bgcolor="black">
+            <font color="#00FFFF">♪ ♫ ♪ ♫ DUDUDUDUDUDU ♪ ♫ ♪ ♫</font>
+          </marquee>
+        </center>
+      </div>
+    </td>
+
+    <td width="180" valign="top" align="center">
+       <div style="border: 3px solid lime; background: black; color: lime; padding: 8px;">
+         <b class="blink">WIN EEN<br>NOKIA 3210!</b><br>
+         <img src="https://media.giphy.com/media/ICOgBgjO00SpO/giphy.gif" width="100"><br>
+         <font size="1">Klik hier (Echt niet nep!)</font><br>
+         <font size="1" color="red">* Je bent bezoeker #1000! *</font>
+       </div>
+       
+       <br>
+       <div style="background: red; color: yellow; padding: 5px; border: 2px solid white;">
+         <b class="blink">⚠️ Y2K BUG<br>WAARSCHUWING!</b><br>
+         <font size="1">Nog 325 dagen!</font>
+       </div>
+       
+       <br>
+       <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22120%22 height=%2260%22%3E%3Crect width=%22120%22 height=%2260%22 fill=%22black%22 stroke=%22lime%22 stroke-width=%223%22/%3E%3Ctext x=%2260%22 y=%2240%22 fill=%22lime%22 font-family=%22monospace%22 font-size=%2230%22 text-anchor=%22middle%22%3E1337420%3C/text%3E%3C/svg%3E">
+       <br><font size="1" color="white">Blije Bezoekers<br>(ECHT GEEN FAKE!)</font>
+       
+       <br><br>
+       <marquee direction="up" height="100" scrollamount="2">
+         <img src="https://usagif.com/wp-content/uploads/gifs/banana-99.gif" width="60"><br>
+         <b>BANAAN!</b><br>
+         <img src="https://usagif.com/wp-content/uploads/gifs/banana-14.gif" width="60"><br>
+         <b>LOL</b><br>
+         <img src="https://usagif.com/wp-content/uploads/gifs/banana-83.gif" width="60"><br>
+         <b>ROFL</b>
+       </marquee>
+       
+       <br>
+       <div style="background: blue; color: white; padding: 5px; border: 2px solid yellow;">
+         <b>ICQ#:</b><br>
+         <font size="3">12345678</font><br>
+         <font size="1" class="blink">UH-OH!</font>
+       </div>
+       
+       <br>
+       <img src="data:image/gif;base64,R0lGODlhSAAgAPAAAAAAAAAwFCH/C05FVFNDQVBFMi4wAwEAAAAh+QQJCgAAACwAAAAASAAgAAAI/wABCBxIsKDBgwgTKlzIsKHDhxAjSpxIsaLFgwAGDBgosqTJkyhTqiRJcqXLlzBjypxJs6bNmzhz6tzJs6fPn0CDCh1KtKjRo0iTKl3KtKnTp1CjSp1KdWDTqlqzasXKtavXr2DDih1LtqzZs2jTql3Ltq3bt3Djyp1Lt67du3jz6t3Lt6/fv4ADCx5MuLDhw4gTK17MuLHjx5AjS55MubLly5gza97MubPnz6BDix5NurTp06hTq17NurXr17Bjy55Nu7bt27hz697Nu7fv38CDCx9OvLjx48iTK1/OvLnz59CjS59Ovbr169iza9/Ovbv37+DDix9Pvrz58+jTq1/Pvr379/Djy59Pv779+/jz69/Pvz8AACH5BAkKAAAALAAAAABIACAAAAj+AAEIHEiwoMGDCBMqXMiwocOHECNKnEgxIICAAQSKLGnypMmTKFOqXMmypcuXMGPKnEmzps2bOHPq3Mmzp8+fQIMKHUq0qNGjSJMqXcq0qdOnUKNKnRqQANSrWAVoDSC2rNmzaNOqXcu2rdu3cOPKnUu3rt27ePPq3cu3r9+/gAMLHky4sOHDiBMrXsy4sePHkCNLnky5suXLmDNr3sy5s+fPoEOLHk26tOnTqFOrXs26tevXsGPLnk27tu3buHPr3s27t+/fwIMLH068uPHjyJMrX868ufPn0KNLn069uvXr2LNr3869u/fv4MOLH0++vPnz6NOrX8++vfv37+PDjy9/Pv369bUBADs=" alt="Under Construction" width="80">
+    </td>
+  </tr>
+</table>
+
+<center>
+  <br>
+  <marquee scrollamount="8" bgcolor="#000000" width="100%">
+    <font color="#FF00FF">⭐</font>
+    <font color="#00FFFF">DEZE SITE IS BEST VIEWED IN NETSCAPE NAVIGATOR 4.0</font>
+    <font color="#FFFF00">⭐</font>
+    <font color="#00FF00">800x600 RESOLUTIE</font>
+    <font color="#FF0000">⭐</font>
+    <font color="#FFA500">HIGH COLOR (16-BIT)</font>
+    <font color="#FF00FF">⭐</font>
+  </marquee>
+  
+  <br>
+  <img src="data:image/gif;base64,R0lGODlhyAAoAPcAAP///wAAAAAAMwAAZgAAmQAAzAAA/wArAAArMwArZgArmQArzAAr/wBVAABVMwBVZgBVmQBVzABV/wCAAACAMwCAZgCAmQCAzACA/wCqAACqMwCqZgCqmQCqzACq/wDVAADVMwDVZgDVmQDVzADV/wD/AAD/MwD/ZgD/mQD/zAD//zMAADMAMzMAZjMAmTMAzDMA/zMrADMrMzMrZjMrmTMrzDMr/zNVADNVMzNVZjNVmTNVzDNV/zOAADOAMzOAZjOAmTOAzDOA/zOqADOqMzOqZjOqmTOqzDOq/zPVADPVMzPVZjPVmTPVzDPV/zP/ADP/MzP/ZjP/mTP/zDP//2YAAGYAM2YAZmYAmWYAzGYA/2YrAGYrM2YrZmYrmWYrzGYr/2ZVAGZVM2ZVZmZVmWZVzGZV/2aAAGaAM2aAZmaAmWaAzGaA/2aqAGaqM2aqZmaqmWaqzGaq/2bVAGbVM2bVZmbVmWbVzGbV/2b/AGb/M2b/Zmb/mWb/zGb//5kAAJkAM5kAZpkAmZkAzJkA/5krAJkrM5krZpkrmZkrzJkr/5lVAJlVM5lVZplVmZlVzJlV/5mAAJmAM5mAZpmAmZmAzJmA/5mqAJmqM5mqZpmqmZmqzJmq/5nVAJnVM5nVZpnVmZnVzJnV/5n/AJn/M5n/Zpn/mZn/zJn//8wAAMwAM8wAZswAmcwAzMwA/8wrAMwrM8wrZswrmcwrzMwr/8xVAMxVM8xVZsxVmcxVzMxV/8yAAMyAM8yAZsyAmcyAzMyA/8yqAMyqM8yqZsyqmcyqzMyq/8zVAMzVM8zVZszVmczVzMzV/8z/AMz/M8z/Zsz/mcz/zMz///8AAP8AM/8AZv8Amf8AzP8A//8rAP8rM/8rZv8rmf8rzP8r//9VAP9VM/9VZv9Vmf9VzP9V//+AAP+AM/+AZv+Amf+AzP+A//+qAP+qM/+qZv+qmf+qzP+q///VAP/VM//VZv/Vmf/VzP/V////AP//M///Zv//mf//zP///wAAAAAAAAAAAAAAACH5BAEAAPwALAAAAADIACgAAAj/APcJHEiwoMGDCBMqXMiwocOHECNKnEixosWLGDNq3Mixo8ePIEOKHEmypMmTKFOqXMmypcuXMGPKnEmzps2bOHPq3Mmzp8+fQIMKHUq0qNGjSJMqXcq0qdOnUKNKnUq1qtWrWLNq3cq1q9evYMOKHUu2rNmzaNOqXcu2rdu3cOPKnUu3rt27ePPq3cu3r9+/gAMLHky4sOHDiBMrXsy4sePHkCNLnky5suXLmDNr3sy5s+fPoEOLHk26tOnTqFOrXs26tevXsGPLnk27tu3buHPr3s27t+/fwIMLH068uPHjyJMrX868ufPn0KNLn069uvXr2LNr3869u/fv4MOLH0++vPnz6NOrX8++vfv38OPLn0+/vv37+PPr38+/v///AAYo4IAEFmjggQgmqOCCDDbo4IMQRijhhBRWaOGFGGao4YYcdujhhyCGKOKIJJZo4okopqjiiiy26OKLMMYo44w01ijjjTRORqOOPAJJZJFGHonkkkwuSWSTTkIJZZRSTklllVZeaWWWWm4J5pZghgnmmGSWaeaZaKap5ppstunmm3DGKeeYcr4J5QMA7" alt="Under Construction" width="200">
+  <br><br>
+  <font color="#00FF00" size="2"><b>
+    WEBMASTER: Yves | EMAIL: yves@hotmail.com | ICQ: 12345678<br>
+    Copyright © 1998 Yves' Cyber-Lab | Powered by Pentium II & Banana Power<br>
+    <span class="blink">Site Counter: 1337420 bezoekers sinds gisteren! (ECHT!)</span>
+  </b></font>
+  
+  <br><br>
+  <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='31'%3E%3Crect fill='black' width='88' height='31'/%3E%3Ctext x='44' y='20' fill='lime' font-family='monospace' font-size='14' text-anchor='middle'%3EGET%3C/text%3E%3Ctext x='44' y='28' fill='lime' font-family='monospace' font-size='8' text-anchor='middle'%3ENETSCAPE%3C/text%3E%3C/svg%3E">
+  <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='31'%3E%3Crect fill='red' width='88' height='31'/%3E%3Ctext x='44' y='15' fill='white' font-family='Arial' font-size='12' font-weight='bold' text-anchor='middle'%3EBEST VIEWED%3C/text%3E%3Ctext x='44' y='25' fill='yellow' font-family='Arial' font-size='10' text-anchor='middle'%3E800x600%3C/text%3E%3C/svg%3E">
+  <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='31'%3E%3Crect fill='%230000AA' width='88' height='31'/%3E%3Ctext x='44' y='12' fill='white' font-family='Arial' font-size='10' font-weight='bold' text-anchor='middle'%3EMADE WITH%3C/text%3E%3Ctext x='44' y='23' fill='yellow' font-family='Comic Sans MS' font-size='12' text-anchor='middle'%3ENOTEPAD%3C/text%3E%3C/svg%3E">
+</center>
+
+</body>
+</html>

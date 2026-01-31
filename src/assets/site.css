@@ -1,0 +1,77 @@
+body {
+  background-color: #151533;
+  background-image: url("bg-tile.gif");
+  background-repeat: repeat;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+a { color: #0000EE; }
+a:visited { color: #551A8B; }
+
+.container {
+  width: 760px;
+  margin: 10px auto;
+  background: #D0D0D0;
+  border: 4px ridge #FFFFFF;
+  padding: 8px;
+}
+
+.header {
+  background: #B8B8B8;
+  border: 2px inset #FFFFFF;
+  padding: 8px;
+}
+
+.nav {
+  margin-top: 6px;
+  background: #B8B8B8;
+  border: 2px inset #FFFFFF;
+  padding: 4px;
+  font-size: 12px;
+}
+
+.content { margin-top: 10px; }
+
+.box {
+  background: #FFFFFF;
+  border: 2px outset #FFFFFF;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.hr95 {
+  height: 1px;
+  background: #000;
+  margin: 6px 0;
+}
+
+.box small { color: #000; }
+
+input[type=button], input[type=submit], input[type=reset] {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  background: #D9D9D9;
+  border: 2px outset #fff;
+  color: #000;
+  padding: 4px 6px;
+}
+
+.led95 {
+  font-family: "Courier New", monospace;
+  font-size: 11px;
+  color: #00FF00;
+  background: #000;
+  padding: 2px 6px;
+  border: 2px inset #666;
+}
+
+.arcadeBtn { display: inline-block; cursor: pointer; }
+.footer {
+  margin-top: 10px;
+  background: #B8B8B8;
+  border: 2px inset #FFFFFF;
+  padding: 6px;
+  font-size: 12px;
+  text-align: center;
+}

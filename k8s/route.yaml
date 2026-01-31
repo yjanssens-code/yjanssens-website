@@ -1,0 +1,43 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: yjanssens-website
+  namespace: yjanssens
+  labels:
+    app: yjanssens-website
+  annotations:
+    # Use HAProxy load balancing
+    haproxy.router.openshift.io/balance: roundrobin
+spec:
+  host: yjanssens.be
+  port:
+    targetPort: http
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect
+  to:
+    kind: Service
+    name: yjanssens-website
+    weight: 100
+  wildcardPolicy: None
+---
+# Additional route for www subdomain
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: yjanssens-website-www
+  namespace: yjanssens
+  labels:
+    app: yjanssens-website
+spec:
+  host: www.yjanssens.be
+  port:
+    targetPort: http
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect
+  to:
+    kind: Service
+    name: yjanssens-website
+    weight: 100
+  wildcardPolicy: None

@@ -1,0 +1,48 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: yjanssens-website
+  namespace: yjanssens
+  labels:
+    app: yjanssens-website
+  annotations:
+    haproxy.router.openshift.io/balance: roundrobin
+    cert-manager.io/issuer-kind: ClusterIssuer
+    cert-manager.io/issuer-name: letsencrypt-yjanssens
+spec:
+  host: yjanssens.be
+  port:
+    targetPort: http
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect
+    certificate: |
+      # Will be populated from secret
+    key: |
+      # Will be populated from secret
+  to:
+    kind: Service
+    name: yjanssens-website
+    weight: 100
+---
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: yjanssens-website-www
+  namespace: yjanssens
+  labels:
+    app: yjanssens-website
+  annotations:
+    cert-manager.io/issuer-kind: ClusterIssuer
+    cert-manager.io/issuer-name: letsencrypt-yjanssens
+spec:
+  host: www.yjanssens.be
+  port:
+    targetPort: http
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect
+  to:
+    kind: Service
+    name: yjanssens-website
+    weight: 100
