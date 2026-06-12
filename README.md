@@ -1,5 +1,11 @@
 # yjanssens.be - Personal Website
 
+> **Active deployment: Azure Static Web Apps** via
+> `.github/workflows/azure-static-web-apps.yml` (push to `main`).
+> The OKD assets (`Dockerfile`, `nginx.conf`, `k8s/`) remain in-tree for a
+> potential return to self-hosted hosting; only one of the two deploy paths
+> should be active at a time.
+
 A retro-style personal website deployed on OKD using enterprise CI/CD practices.
 
 ## Architecture
